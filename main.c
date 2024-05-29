@@ -1,4 +1,3 @@
-// main.c
 #include "sistema_de_arquivos.h"
 #include <stdio.h>
 #include <string.h>
@@ -23,6 +22,7 @@ int main() {
     int opcao;
     char nome_arquivo[20];
     int tamanho;
+    char conteudo[MAX_CONTENT_SIZE];
 
     while (1) {
         show_menu();
@@ -39,7 +39,11 @@ int main() {
                 scanf("%d", &tamanho);
                 getchar(); // Limpar o buffer do \n
 
-                cat(nome_arquivo, tamanho);
+                printf("Digite o conteúdo do arquivo: ");
+                fgets(conteudo, sizeof(conteudo), stdin);
+                conteudo[strcspn(conteudo, "\n")] = '\0'; // Remove o newline do input
+
+                cat(nome_arquivo, tamanho, conteudo);
                 break;
 
             case 2:
@@ -52,7 +56,6 @@ int main() {
                 fgets(nome_arquivo, sizeof(nome_arquivo), stdin);
                 nome_arquivo[strcspn(nome_arquivo, "\n")] = '\0'; // Remove o newline do input
 
-                printf("Conteúdo de %s:\n", nome_arquivo);
                 more(nome_arquivo);
                 break;
 
