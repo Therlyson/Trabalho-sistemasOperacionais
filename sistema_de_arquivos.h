@@ -2,10 +2,9 @@
 #define SISTEMA_DE_ARQUIVOS_H
 
 #define MAX_FILES 100
-#define DISK_SIZE 50
+#define DISK_SIZE 80
 #define MAX_CONTENT_SIZE 100
 
-// Estrutura para armazenar informações do arquivo
 typedef struct {
     char nome[20];
     int tamanho;
@@ -13,7 +12,6 @@ typedef struct {
     char conteudo[MAX_CONTENT_SIZE];
 } arquivo_de_entrada;
 
-// Estrutura para representar o diretório
 typedef struct {
     arquivo_de_entrada arquivos[MAX_FILES];
     int contador_arquivos;

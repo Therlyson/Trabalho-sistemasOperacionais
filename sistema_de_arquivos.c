@@ -12,6 +12,13 @@ void cat(const char* nome_arquivo, const char* conteudo) {
         return;
     }
 
+    for (int i = 0; i < diretorio.contador_arquivos; ++i) {
+        if (strcmp(diretorio.arquivos[i].nome, nome_arquivo) == 0) {
+            printf("\nERRO! O arquivo %s já existe.\n", nome_arquivo);
+            return;
+        }
+    }
+
     int tamanho = (int) strlen(conteudo);
 
     // Encontrar espaço contíguo no disco

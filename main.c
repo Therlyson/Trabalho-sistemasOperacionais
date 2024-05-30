@@ -12,7 +12,7 @@ void show_menu() {
 }
 
 int main() {
-    memset(disco, 0, sizeof(disco)); // Inicializa o disco e o diretório
+    memset(disco, 0, sizeof(disco)); //inicializar o "disco" com zeros.
     diretorio.contador_arquivos = 0;
 
     carregar_diretorio("diretorio.txt");
