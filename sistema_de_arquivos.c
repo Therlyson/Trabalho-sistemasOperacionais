@@ -107,7 +107,7 @@ void carregar_diretorio(const char* nome_diretorio) {
     char conteudo[MAX_CONTENT_SIZE];
     while (fscanf(file, "%s %d %d", name, &tamanho, &start) == 3) {
         fgets(conteudo, MAX_CONTENT_SIZE, file); // Lê o resto da linha como conteúdo
-        conteudo[strcspn(conteudo, "\n")] = 0; // Remove o '\n' do final
+        conteudo[strcspn(conteudo, "\n")] = 0;
 
         strcpy(diretorio.arquivos[diretorio.contador_arquivos].nome, name);
         diretorio.arquivos[diretorio.contador_arquivos].tamanho = tamanho;

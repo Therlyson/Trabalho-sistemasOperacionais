@@ -1,4 +1,4 @@
-A.txt 11 0  teste final
-b.pdf 20 11  B está sendo criado
-C.jpg 5 31  teste
-D.html 6 36  ultimo
+A.txt 11 0   teste final
+b.pdf 20 11   B está sendo criado
+C.jpg 5 31   teste
+D.html 6 36   ultimo

@@ -48,8 +48,3 @@ Para compilar e executar este projeto, siga os passos abaixo:
 Ambiente de Desenvolvimento:
 A compilação e execução do trabalho foram realizadas em um ambiente Ubuntu Linux utilizando-se a linha de comando através do WSL (Windows Subsystem for Linux) 
 do Windows. O Visual Studio Code (VSCode) foi utilizado com a extensão WSL para editar e rodar o código como se fosse em um ambiente Linux.
-
-
-Conclusão:
-Este projeto oferece uma visão básica de como sistemas de arquivos podem ser implementados em C. 
-Melhorias podem ser feitas em várias áreas, como gerenciamento de espaço no disco, verificação de entradas do usuário e robustez da interface de usuário.
